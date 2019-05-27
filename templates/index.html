@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>BOOP</title>
-  </head>
-  <body>
-      <h1>{{ headline }}</h1>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  </body>
-</html>
+{% extends "layout.html" %}
+
+{% block heading %}
+INDEX.HTML
+{% endblock %}
+
+{% block body %}
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae metus vitae tellus fermentum porttitor. Sed in lectus sed enim lobortis rutrum eu sed lorem. Suspendisse luctus mauris eget tempus pellentesque. Vivamus cursus lorem id purus vehicula hendrerit. Quisque urna erat, pellentesque eu erat vel, facilisis consequat dolor. Suspendisse auctor tempor felis quis interdum. Vivamus ac odio eget dui tempor egestas sed at elit. Etiam maximus dignissim enim sed sollicitudin. Curabitur ligula nulla, fermentum ut erat eget, feugiat faucibus massa. Donec et diam vel augue semper ultrices. Donec odio est, feugiat ac finibus efficitur, fermentum lacinia nisl. Morbi laoreet, nunc sit amet lobortis sollicitudin, orci lectus pulvinar quam, sed rhoncus nunc sapien sit amet lorem. Fusce vehicula est at fringilla pellentesque.
+
+  Nullam sed consequat nibh. Etiam non mi mi. Aliquam maximus tellus eu purus dapibus, vel pretium arcu consequat. Sed ac feugiat est. Duis tincidunt elit sit amet consequat ultrices. Praesent vitae suscipit neque. Pellentesque lobortis erat ut neque facilisis feugiat. Aliquam ornare gravida lacus, at volutpat erat consequat et. Duis aliquet maximus felis vitae aliquet. Curabitur ante nibh, euismod eget posuere ac, pellentesque ornare neque. Aliquam blandit, tellus vitae malesuada dictum, leo turpis elementum tortor, nec consequat orci tortor non purus. Donec quis lectus metus. Pellentesque cursus, felis interdum pellentesque maximus, lorem diam laoreet enim, facilisis suscipit ex ante imperdiet velit.</p>
+<a href="{{ url_for('more') }}">More</a>
+{% endblock %}
