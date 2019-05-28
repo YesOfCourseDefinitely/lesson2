@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
+
 {% block heading %}
 INDEX.HTML
 {% endblock %}
 
 {% block body %}
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae metus vitae tellus fermentum porttitor. Sed in lectus sed enim lobortis rutrum eu sed lorem. Suspendisse luctus mauris eget tempus pellentesque. Vivamus cursus lorem id purus vehicula hendrerit. Quisque urna erat, pellentesque eu erat vel, facilisis consequat dolor. Suspendisse auctor tempor felis quis interdum. Vivamus ac odio eget dui tempor egestas sed at elit. Etiam maximus dignissim enim sed sollicitudin. Curabitur ligula nulla, fermentum ut erat eget, feugiat faucibus massa. Donec et diam vel augue semper ultrices. Donec odio est, feugiat ac finibus efficitur, fermentum lacinia nisl. Morbi laoreet, nunc sit amet lobortis sollicitudin, orci lectus pulvinar quam, sed rhoncus nunc sapien sit amet lorem. Fusce vehicula est at fringilla pellentesque.
-
-  Nullam sed consequat nibh. Etiam non mi mi. Aliquam maximus tellus eu purus dapibus, vel pretium arcu consequat. Sed ac feugiat est. Duis tincidunt elit sit amet consequat ultrices. Praesent vitae suscipit neque. Pellentesque lobortis erat ut neque facilisis feugiat. Aliquam ornare gravida lacus, at volutpat erat consequat et. Duis aliquet maximus felis vitae aliquet. Curabitur ante nibh, euismod eget posuere ac, pellentesque ornare neque. Aliquam blandit, tellus vitae malesuada dictum, leo turpis elementum tortor, nec consequat orci tortor non purus. Donec quis lectus metus. Pellentesque cursus, felis interdum pellentesque maximus, lorem diam laoreet enim, facilisis suscipit ex ante imperdiet velit.</p>
-<a href="{{ url_for('more') }}">More</a>
+  <form action = "{{ url_for('hello') }}" method = "POST">
+    <input type = "text" name = "nameField" placeholder="Enter Name">
+    <button>Submit</button>
+  </form>
 {% endblock %}
